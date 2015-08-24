@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		F8DD4C541B8B5EDB0096E34B /* ZBLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8DD4C531B8B5EDB0096E34B /* ZBLog.mm */; };
+		F8DD4C571B8B6FF00096E34B /* ZBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD4C551B8B6FF00096E34B /* ZBLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD4C581B8B6FF00096E34B /* ZBLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8DD4C561B8B6FF00096E34B /* ZBLog.mm */; };
 		FE7AB4911B8ACAB7009633F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7AB4901B8ACAB7009633F6 /* main.m */; };
 		FE7AB4941B8ACAB7009633F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7AB4931B8ACAB7009633F6 /* AppDelegate.m */; };
 		FE7AB4971B8ACAB7009633F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7AB4961B8ACAB7009633F6 /* ViewController.m */; };
@@ -95,6 +98,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F8DD4C521B8B5EDB0096E34B /* ZBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLog.h; sourceTree = "<group>"; };
+		F8DD4C531B8B5EDB0096E34B /* ZBLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZBLog.mm; sourceTree = "<group>"; };
+		F8DD4C551B8B6FF00096E34B /* ZBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBLog.h; path = ZBKitCode/ZBLog/ZBLog.h; sourceTree = SOURCE_ROOT; };
+		F8DD4C561B8B6FF00096E34B /* ZBLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ZBLog.mm; path = ZBKitCode/ZBLog/ZBLog.mm; sourceTree = SOURCE_ROOT; };
 		FE7AB48B1B8ACAB7009633F6 /* ZBKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7AB48F1B8ACAB7009633F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE7AB4901B8ACAB7009633F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -169,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8DD4C511B8B5EBE0096E34B /* ZBLog */ = {
+			isa = PBXGroup;
+			children = (
+				F8DD4C521B8B5EDB0096E34B /* ZBLog.h */,
+				F8DD4C531B8B5EDB0096E34B /* ZBLog.mm */,
+			);
+			path = ZBLog;
+			sourceTree = "<group>";
+		};
 		FE7AB4821B8ACAB7009633F6 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +255,7 @@
 				FE7AB6211B8B03EA009633F6 /* ZBKit.h */,
 				FE7AB61A1B8B03EA009633F6 /* ZBCheck */,
 				FE7AB6221B8B03EA009633F6 /* ZBLayout */,
+				F8DD4C511B8B5EBE0096E34B /* ZBLog */,
 			);
 			path = ZBKitCode;
 			sourceTree = SOURCE_ROOT;
@@ -270,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				FE7AB69A1B8B0F0F009633F6 /* ZBKit.h */,
+				F8DD4C551B8B6FF00096E34B /* ZBLog.h */,
+				F8DD4C561B8B6FF00096E34B /* ZBLog.mm */,
 				FEC13D341B8B1888004B3283 /* NSArray+ZBCheck.h */,
 				FEC13D351B8B1888004B3283 /* NSArray+ZBCheck.m */,
 				FEC13D361B8B1888004B3283 /* NSMutableArray+ZBCheck.h */,
@@ -317,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE7AB69B1B8B0F0F009633F6 /* ZBKit.h in Headers */,
+				F8DD4C571B8B6FF00096E34B /* ZBLog.h in Headers */,
 				FEC13D3A1B8B1888004B3283 /* NSArray+ZBCheck.h in Headers */,
 				FEC13D3C1B8B1888004B3283 /* NSMutableArray+ZBCheck.h in Headers */,
 				FEC13D3E1B8B1888004B3283 /* NSMutableDictionary+ZBCheck.h in Headers */,
@@ -508,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DD4C541B8B5EDB0096E34B /* ZBLog.mm in Sources */,
 				FE7AB6281B8B03EA009633F6 /* NSMutableDictionary+ZBCheck.m in Sources */,
 				FE7AB6291B8B03EA009633F6 /* UIView+ZBAutoLayout.m in Sources */,
 				FE7AB4971B8ACAB7009633F6 /* ViewController.m in Sources */,
@@ -534,6 +555,7 @@
 				FEC13D3D1B8B1888004B3283 /* NSMutableArray+ZBCheck.m in Sources */,
 				FEC13D3B1B8B1888004B3283 /* NSArray+ZBCheck.m in Sources */,
 				FEC13D441B8B1892004B3283 /* UIView+ZBAutoLayout.m in Sources */,
+				F8DD4C581B8B6FF00096E34B /* ZBLog.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +893,7 @@
 				FEC13DE51B8B2515004B3283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

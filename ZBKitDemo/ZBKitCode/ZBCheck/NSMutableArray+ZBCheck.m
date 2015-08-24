@@ -1,12 +1,13 @@
 //
 //  NSMutableArray+ZBCheck.m
-//  ZBKitDemo
+//  ZBKit
 //
-//  Created by ZhaoMY on 8/24/15.
+//  Created by zhao on 8/24/15.
 //  Copyright (c) 2015 Zhao. All rights reserved.
 //
 
 #import "NSMutableArray+ZBCheck.h"
+#import "ZBLog.h"
 #import <objc/runtime.h>
 
 @implementation NSMutableArray (ZBCheck)
@@ -27,7 +28,7 @@ static IMP _targetImp2 = NULL;
         
     } else {
         
-        NSLog(@"数组越界：%@", self.description);
+        ZBWarning(@"数组越界：%@", self.description);
     }
     
     return result;
@@ -43,7 +44,7 @@ static IMP _targetImp2 = NULL;
         
     } else {
      
-        NSLog(@"插入的数据为空：%@",self);
+        ZBWarning(@"插入的数据为空：%@",self);
     }
 }
 

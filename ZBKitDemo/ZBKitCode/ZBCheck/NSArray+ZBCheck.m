@@ -1,12 +1,13 @@
 //
 //  NSArray+Check.m
-//  拦截
+//  ZBKit
 //
-//  Created by ZhaoMY on 8/21/15.
+//  Created by zhao on 8/24/15.
 //  Copyright (c) 2015 Zhao. All rights reserved.
 //
 
 #import "NSArray+ZBCheck.h"
+#import "ZBLog.h"
 #import <objc/runtime.h>
 
 @implementation NSArray (ZBCheck)
@@ -25,7 +26,7 @@ static IMP _targetImp = NULL;
         
     } else {
         
-        NSLog(@"数组越界：%@", self.description);
+        ZBWarning(@"数组越界：%@", self.description);
     }
 
     return result;

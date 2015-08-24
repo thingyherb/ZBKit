@@ -25,13 +25,13 @@
                        @"第二个",
                        @"第三个"];
 
-    NSLog(@"%@",array.check[0]);// 正常
-    NSLog(@"%@",array.check[10]);// 越界，但不会崩溃
+    LOG(array.check[0]);// 正常
+    LOG(@"%@",array.check[10]);// 越界，但不会崩溃
     
     NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
     
-    NSLog(@"%@",mutableArray.check[2]);// 正常
-    NSLog(@"%@",mutableArray.check[20]);// 越界，但不会崩溃
+    LOG(@"%@",mutableArray.check[2]);// 正常
+    LOG(@"%@",mutableArray.check[20]);// 越界，但不会崩溃
     
     [mutableArray.check addObject:nil];
     
@@ -42,7 +42,8 @@
     //[mutableDict setValue:nil forKey:@"one"];
     
     [mutableDict.check setObject:nil forKey:@"one"];
-    NSLog(@"%@",mutableDict[@"one"]);
+    
+    ELOG(@"%@",mutableDict[@"one"]);
 }
 
 - (void)didReceiveMemoryWarning {
