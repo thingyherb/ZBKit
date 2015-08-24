@@ -1,10 +1,9 @@
 //
 //  ZBKit.h
-//  ZBKitDemo
+//  ZBKit
 //
-//  Created by ZhaoMY on 7/23/15.
-//  Copyright (c) 2015 Zhao. All rights reserved.
-//  https://github.com/zhaomy/ZBKit/tree/master/ZBKit
+//  Created by zhao on 8/24/15. (https://github.com/zhaomy/ZBKit )
+//  Copyright (c) 2015 zhao. All rights reserved.
 //
 
 #ifndef ZBKitDemo_ZBKit_h
@@ -14,6 +13,11 @@
 #import "NSMutableArray+ZBCheck.h"
 #import "NSMutableDictionary+ZBCheck.h"
 #import "UIView+ZBAutoLayout.h"
-
+#import "ZBLog.h"
 
 #endif
+
+
+
+
+

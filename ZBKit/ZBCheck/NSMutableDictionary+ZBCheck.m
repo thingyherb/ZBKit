@@ -1,12 +1,13 @@
 //
 //  NSMutableDictionary+ZBCheck.m
-//  ZBKitDemo
+//  ZBKit
 //
-//  Created by ZhaoMY on 8/24/15.
+//  Created by zhao on 8/24/15.
 //  Copyright (c) 2015 Zhao. All rights reserved.
 //
 
 #import "NSMutableDictionary+ZBCheck.h"
+#import "ZBLog.h"
 #import <objc/runtime.h>
 
 @implementation NSMutableDictionary (ZBCheck)
@@ -23,7 +24,7 @@ static IMP _targetImp = NULL;
         
     } else {
         
-        NSLog(@"插入的数据为空：%@",self);
+        ZBWarning(@"插入的数据为空：%@",self);
     }
 }
 
