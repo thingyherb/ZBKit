@@ -1,0 +1,1 @@
+sudo cp -R ZB.xctemplate /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/Source/ZB.xctemplate
