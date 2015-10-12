@@ -11,15 +11,15 @@ import UIKit
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
 
     
-    // MARK: Lazy
+    // MARK: - Lazy
 
-    // MARK: Deinit
+    // MARK: - Deinit
     deinit {
         
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    // MARK: Initialize
+    // MARK: - Initialize
     required init(coder: NSCoder) {
         super.init(coder: coder)!
         
@@ -50,22 +50,34 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
         
     }
     
-    // MARK: Receive Notification
+    // MARK: - Receive Notification
     func didReveiveKeyWillShowNotification(notification:NSNotification) {
         
     }
     
-    // MARK: System Delegate
-    // MARK: -- System Delegate1
+    // MARK: - System Delegate
+    // MARK: SystemDelegate1
     
     
-    // MARK: Custom Delegate
-    // MARK: -- Custom Delegate1
+    // MARK: - Custom Delegate
+    // MARK: CustomDelegate1
     
     
-    // MARK: Event Response
+    // MARK: - Event Response
     func didPressOneButton(sender: UIButton) {
         
     }
+    
+    // MARK: - Public Method
+    internal func letDoSomething() {
+        
+    }
+    
+    // MARK: - Private Method
+    private func doSomething() {
+        
+    }
+    
+    
 }
 

@@ -16,7 +16,7 @@
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
 
-#pragma mark - Life circle
+#pragma mark - Life Circle
 
 - (void)dealloc {
 
@@ -50,18 +50,24 @@
 }
 
 #pragma mark - System Delegate
-#pragma mark -- System Delegate1
+#pragma mark SystemDelegate1
 
 
 
 #pragma mark - Custom Delegate
-#pragma mark -- Custom Delegate1
+#pragma mark CustomDelegate1
 
 
 
 #pragma mark - Event Response
 
 - (void)didPressOneButton:(UIButton *)oneButton {
+    
+}
+
+#pragma mark - Public Method
+
+- (void)letDoSomething {
     
 }
 

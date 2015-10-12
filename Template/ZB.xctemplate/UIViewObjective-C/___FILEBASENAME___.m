@@ -71,11 +71,11 @@
 }
 
 #pragma mark - System Delegate
-#pragma mark -- System Delegate1
+#pragma mark SystemDelegate1
 
 
 #pragma mark - Custom Delegate
-#pragma mark - Custom Delegate1
+#pragma mark CustomDelegate1
 
 
 #pragma mark - Event Response
@@ -84,6 +84,17 @@
     
 }
 
+#pragma mark - Public Method
+
+- (void)letDoSomething {
+    
+}
+
+#pragma mark - Private Method
+
+- (void)doSomething {
+    
+}
 
 
 
