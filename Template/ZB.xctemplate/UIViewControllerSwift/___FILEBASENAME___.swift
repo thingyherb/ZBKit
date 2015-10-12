@@ -10,7 +10,7 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
 
-    // MARK: - Life circle
+    // MARK: Life circle
     deinit {
         
         NSNotificationCenter.defaultCenter().removeObserver(self)
@@ -18,9 +18,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // You should add subviews here, just add subviews
-
-
+        
         // initialize
         self.initialize()
 
@@ -29,7 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
     }
 
     func initialize() {
-        // initialize
+        // You should add subviews here, just add subviews
         
     }
 
@@ -38,20 +36,20 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
 
     }
 
-    // MARK: - Receive Notification
+    // MARK: Receive Notification
     func didReveiveKeyWillShowNotification(notification:NSNotification) {
 
     }
 
-    // MARK: - System Delegate
+    // MARK: System Delegate
     // MARK: -- System Delegate1
 
 
-    // MARK: - Custom Delegate
+    // MARK: Custom Delegate
     // MARK: -- Custom Delegate1
 
 
-    // MARK: - Event Response
+    // MARK: Event Response
     func didPressOneButton(sender: UIButton) {
         
         

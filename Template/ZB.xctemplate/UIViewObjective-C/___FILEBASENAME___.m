@@ -8,14 +8,86 @@
 
 #import "___FILEBASENAME___.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___
+@interface ___FILEBASENAMEASIDENTIFIER___ ()
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
+
+
+@implementation ___FILEBASENAMEASIDENTIFIER___
+
+
+#pragma mark - Dealloc
+
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Initialize
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    
+    if (self = [super initWithCoder:aDecoder]) {
+        
+        // initialize
+        [self initialize];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    
+    if (self = [super initWithFrame:frame]) {
+        
+        // initialize
+        [self initialize];
+    }
+    
+    return self;
+}
+
+- (void)drawRect:(CGRect)rect {
+    
+    // layout subviews
+    [self layout];
+}
+
+- (void)initialize {
+    // You should add subviews here, just add subviews
+    
+}
+
+- (void)layout {
+    // You should set subviews constrainsts or frame here
+    
+}
+
+#pragma mark - Receive Notification
+
+- (void)didReveiveKeyWillShowNotification:(NSNotification *)notification {
+    
+}
+
+#pragma mark - System Delegate
+#pragma mark -- System Delegate1
+
+
+#pragma mark - Custom Delegate
+#pragma mark - Custom Delegate1
+
+
+#pragma mark - Event Response
+
+- (void)didPressOneButton:(UIButton *)button {
+    
+}
+
+
+
+
+@end
+
+
+

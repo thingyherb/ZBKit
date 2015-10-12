@@ -10,12 +10,14 @@
 
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
 
+
 @end
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
 
 #pragma mark - Life circle
+
 - (void)dealloc {
 
     [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -23,16 +25,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // You should add subviews here, just add subviews
     
-    
+    // initialize
+    [self initialize];
     
     // layout subviews
     [self layout];
 }
 
 - (void)initialize {
-    // initialize
+    // You should add subviews here, just add subviews
     
 }
 
